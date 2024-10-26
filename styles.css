@@ -1,0 +1,133 @@
+body {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center body content */
+    background-color: #F5F5F5;
+    margin: 0; /* Remove default body margin */
+}
+
+header {
+    width: 100%; /* Use full width of the viewport */
+    max-width: 1000px; /* Cap the max width */
+    min-height: 300px;
+    margin: auto; /* Center the header */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Center header content */
+    box-sizing: border-box; /* Include padding/border in width calculations */
+}
+
+.welcome {
+    font-family: 'Fira Mono', monospace; /* Ensure the font family is correct */
+    text-align: center;
+    font-size: 150px;
+    color: #009688;
+    text-shadow: 5px 5px #B2E3D2;
+}
+
+h1 {
+    font-family: 'Fira Mono', monospace;
+    text-align: center;
+    color: #009688;
+}
+
+h2 {
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    color: #007B77;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif; /* Ensure the font family is correct */
+    color: #007B77;
+    font-size: 20px;
+    text-align: center; /* Center align paragraph text */
+    margin-top: 10px; /* Space between header and paragraph */
+}
+
+.greeting {
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.portfoliopic {
+    width: 500px;
+    height: auto;
+    margin-right: 20px; /* Space between image and heading */
+    vertical-align: middle;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #009688;
+}
+
+#myEducation {
+    width: 100%;
+}
+
+#myPortfolio {
+    width: 100%;
+}
+
+.separator {
+    border-top: 5px solid #F6D1C1; /* Change to dotted for a dotted line */
+    width: 100%;
+}
+
+.fade-in-element {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    background-color: #F9E6D6;
+    width: auto;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center; /* Center items */
+        margin: auto; /* Ensure margins are centered */
+    }
+    .portfoliopic {
+        width: 300px; /* Adjust size for smaller screens */
+    }
+    .welcome {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+        text-align: center; /* Center the text */
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 1200px) {
+    header {
+        flex-direction: column; /* Maintain column layout on smaller tablets */
+        align-items: center; /* Center items */
+        justify-content: center; /* Center header content */
+    }
+    .portfoliopic {
+        width: 300px; /* Adjust size for medium screens */
+    }
+    .welcome {
+        font-size: 4rem; /* Maintain larger font size */
+        text-align: center; /* Center the text */
+    }
+}
+
+/* Large screens */
+@media (min-width: 1201px) {
+    header {
+        flex-direction: row; /* Reset to row layout for larger screens */
+        justify-content: center; /* Center header content */
+        margin-bottom: 100px;
+    }
+    .portfoliopic {
+        width: 500px; /* Reset image size for larger screens */
+    }
+    .welcome {
+        font-size: 150px; /* Reset font size for large screens */
+    }
+}
