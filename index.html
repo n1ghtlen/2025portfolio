@@ -14,7 +14,12 @@
 </head>
 <body>
     <header>
-        <img class="portfoliopic" src="portfoliopic.jpg" />
+        <div class="portfoliopic-container">
+            <img class="portfoliopic" src="portfoliopic.jpg" />
+            <div class="portfolioicon-corner">
+                <img class="portfolioicon" src="portfolioicon.png" />
+            </div>
+        </div>
         <h1 class="welcome">WELCOME TO MY SPACE</h1>
     </header>
     <div class="fade-in-element" id="introBlurb" style="background-color: #F9E6D6">
@@ -22,22 +27,93 @@
         <h1>Hi there!</h1>
         <p><b>My name is Daylen Polidori</b> and I'm currently a
             student at the University of Central Florida studying Digital
-                Media, concentrating in Web and Interactive Media. My interests
-                    lie pretty much anywhere in the digital space, from
-                    photography/video creation/games amongst other things. However, my career
-                        goals lie in <b>web development</b> and <b>design.</b> I’m looking
-                            forward to exploring potential opportunities!
+            Media, specifically Web and Interactive Media.</p>
+                <p>My interests
+                lie pretty much anywhere in the digital space, from
+                photography to graphic design to video creation and to games.</p>
+                    <p>My career goals lie in <b>web development</b> and <b>design</b>
+                    and I’m looking forward to exploring potential opportunities!</p>
         </p>
     </div>
     <div class="fade-in-element" id="myEducation" style="background-color: #F6E2D1">
         <div class="separator"></div>
         <h1>My Education</h1>
-        <h2>Pursuing a Bachelor of Arts in Digital Media || University of Central Florida || May 2025
+        <h2>Pursuing a Bachelor of Arts in Digital Media, minor in Psychology || University of Central Florida || May 2025
         </h2>
-        <p>Relevant studies: web development, mobile development, web design, UX design</p>
+        <p>Relevant studies: web development, mobile development, web design, UX design, design fundamentals</p>
     </div>
     <div class="fade-in-element" id="myPortfolio" style="background-color: #F6D1C1">
         <h1>Take a look at my work!</h1>
+        <div class="project-container">
+            <div class="project-card">
+                <h3>React Exercise Menu</h3>
+                <img src="exercisemenu.gif" class="project-image">
+                <p class="project-info">This is an exercise app I created using <b>React</b>. Users can pick from a variety of exercises, 
+                    whether they're duration or repetition-based, and record them appropriately as needed.</p>
+            </div>
+            <div class="project-card">
+                <h3>"Oneiria" App Prototype</h3>
+                <img src="oneiria.gif" class="project-image">
+                <p class="project-info">This is a mid-fidelty prototype I created using <b>Figma</b> of a proposed app I came up with called Oneiria,
+                    a social platform where users can document and discuss their dreams in a social media format with other users.
+                </p>
+            </div>
+            <div class="project-card">
+                <h3>Florida OSFA Redesign</h3>
+                <img src="osfaredesign.png" class="project-image">
+                <p class="project-info">After reflecting on my own experiences using the OSFA website, I decided to use <b>HTML/CSS</b> with my knowledge of web design to revamp its 
+                    arguably outdated landing page (pictured on bottom), as it isn't very cohesive with the other pages linked on
+                    the site. I redesigned it (pictured on top) to not only accomplish cohesion but also to implement navigation that is easier to
+                    understand.
+                </p>
+            </div>
+            <div class="project-card">
+                <h3>Car Inventory Manager</h3>
+                <video src="carinventory.mp4" class="project-image" controls></video>
+                <p class="project-info">Using a combination of <b>HTML/CSS</b> and <b>vanilla JavaScript</b>, I created this car inventory management
+                    system. It has the capability to:
+                    <br>
+                    <br>
+                    ~Calculate the total price of all cars
+                    <br>
+                    <br>
+                    ~Display the most expensive car
+                    <br>
+                    <br>
+                    ~Sort car prices
+                    <br>
+                    <br>
+                    ~Display the average price
+                </p>
+            </div>
+            <div class="project-card">
+                <h3>Fun Questionnaire</h3>
+                <video src="survey.mp4" class="project-image" controls></video>
+                <p class="project-info">I created this quiz using <b>HTML/CSS</b> and <b>vanilla JavaScript</b> that collects the user's contact information along with their answers to see
+                    if they answered the same as I would. Upon completing the survey, their contact information is displayed along with their result.
+                    <br>
+                    <br>
+                    If our answers aren't quite the same, the user receives the message displayed in the video.
+                    <br>
+                    <br>
+                    If we answer exactly the same, the message would read "We're pretty alike you and me!"
+                </p>
+            </div>
+            <div class="project-card">
+                <h3>Portfolio Design</h3>
+                <img src="portfoliodesign.png" class="project-image">
+                <p class="project-info">This is the general design outline I created in <b>Figma</b> for the portfolio you're looking at right now, crafted to reflect my personality through a mix of soft pastels.
+                    <br>
+                    <br>
+                    I love incorporating these tones as they allow me to explore color in a way that keeps the design minimalistic, sleek, and easy on the eyes.
+                    <br>
+                    <br>
+                    Accessibility is a priority in my design choices, and I find that subtle palettes allow me to explore color while keeping accessibility in mind.
+                    <br>
+                    <br>
+                    Taking a design from visual conception to code is one of the most exciting parts of web development for me and is a <u>major reason I’m drawn to this field!</u></p>
+            </div>
+        </div>
     </div>
 </body>
 </html>

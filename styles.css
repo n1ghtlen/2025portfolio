@@ -32,7 +32,7 @@ h1 {
     color: #009688;
 }
 
-h2 {
+h2, h3 {
     font-family: 'Fira Sans', sans-serif;
     text-align: center;
     color: #007B77;
@@ -42,13 +42,13 @@ p {
     font-family: 'Fira Sans', sans-serif; /* Ensure the font family is correct */
     color: #007B77;
     font-size: 20px;
+    line-height: 1.5;
     text-align: center; /* Center align paragraph text */
     margin-top: 10px; /* Space between header and paragraph */
 }
 
-.greeting {
-    font-size: 30px;
-    margin-top: 30px;
+.portfoliopic-container {
+    position: relative;
 }
 
 .portfoliopic {
@@ -61,11 +61,18 @@ p {
     border-color: #009688;
 }
 
-#myEducation {
-    width: 100%;
+.portfolioicon {
+    width: 150px;
+    height: auto;
 }
 
-#myPortfolio {
+.portfolioicon-corner {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+
+#introBlurb, #myEducation, #myPortfolio {
     width: 100%;
 }
 
@@ -79,10 +86,37 @@ p {
     transition: opacity 1s ease-in-out;
     background-color: #F9E6D6;
     width: auto;
+    min-height: 300px;
 }
 
 .fade-in {
     opacity: 1;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.project-card {
+    width: 100%;
+    max-width: 1200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+}
+
+.project-info {
+    padding: 1rem;
 }
 
 /* Mobile styles */
