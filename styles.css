@@ -44,7 +44,7 @@ p {
     font-size: 20px;
     line-height: 1.5;
     margin-top: 10px; /* Space between header and paragraph */
-    max-width: 700px;
+    max-width: 1000px;
     text-align: center; /* Center align paragraph text */
 }
 
@@ -110,14 +110,13 @@ li {
 
 .project-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     gap: 20px;
     justify-items: center;
 }
 
 .project-card {
     width: 100%;
-    max-width: 1200px;
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
@@ -127,7 +126,7 @@ li {
 
 .project-image {
     width: 100%;
-    height: auto;
+    max-height: 600px;
 }
 
 .project-info {
